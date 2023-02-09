@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    
+    height: 100vh;
+    background-color: rgb( 107, 107, 241);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    color: #fff;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#msg{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+
+section{
+    background-color: #fff;
+    border-radius: 1.0rem;
+    padding: 3.0rem 1.5rem;
+    
+    width: 50.0rem;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#foto img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+footer{
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+@media (max-width: 600px){
+    body{
+        height: 100vh;
+    }
+
+    section{
+       max-width: 300px ;
+    }
+}
+
+#foto img{
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 340px){
+
+    header h1{
+        font-size: 3.0rem;
+        
+    }
+
+    section{
+        max-width: 250px;
+    }
+
+    #msg{
+        font-size: 1.6rem;
+    }
+
+    #foto img{
+        width: 180px;
+        height: 180px;
+    }
+
+    footer{
+        font-size: 1.2rem;
+    }
+}
