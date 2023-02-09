@@ -12,10 +12,10 @@ function carregar(){
         msg.innerHTML = `Agora são ${horas} horas da manhã.`
     }
 
-    else if (horas >= 0 ){
+    else if (horas == 0 ){
         img.src = './img/fotomadrugada.jpg'
         document.body.style.background = '#161830'
-        msg.innerHTML = `Agora são ${horas} hora da manhã.`
+        msg.innerHTML = `Agora é MEIA NOITE.`
 
     }
 
