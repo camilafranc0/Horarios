@@ -19,6 +19,13 @@ function carregar(){
 
     }
 
+    else if (horas == 1 ){
+        img.src = './img/fotomadrugada.jpg'
+        document.body.style.background = '#161830'
+        msg.innerHTML = `Agora é ${horas} hora da manhã.`
+
+    }
+
     else if(horas >= 2 && horas < 4 ){
         img.src = './img/fotomadrugada.jpg'
         document.body.style.background = '#161830'
