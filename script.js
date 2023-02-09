@@ -12,7 +12,14 @@ function carregar(){
         msg.innerHTML = `Agora são ${horas} horas da manhã.`
     }
 
-    else if(horas >= 0 && horas < 4 ){
+    else if (horas >= 0 ){
+        img.src = './img/fotomadrugada.jpg'
+        document.body.style.background = '#161830'
+        msg.innerHTML = `Agora são ${horas} hora da manhã.`
+
+    }
+
+    else if(horas >= 2 && horas < 4 ){
         img.src = './img/fotomadrugada.jpg'
         document.body.style.background = '#161830'
         msg.innerHTML = `Agora são ${horas} horas da manhã.`
