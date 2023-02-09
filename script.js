@@ -4,13 +4,18 @@ function carregar(){
     let data = new Date()
     let horas = data.getHours()
     
-      
 
-    msg.innerHTML = `Agora são ${horas} horas.`
-
-    if(horas > 0 && horas <= 12){
+   
+    if(horas >= 4 && horas <= 12){
         img.src = './img/fotomanha.jpg'
         document.body.style.background = '#E9C575'
+        msg.innerHTML = `Agora são ${horas} horas da manhã.`
+    }
+
+    else if(horas >= 0 && horas < 4 ){
+        img.src = './img/fotomadrugada.jpg'
+        document.body.style.background = '#161830'
+        msg.innerHTML = `Agora são ${horas} horas da manhã.`
     }
     else if (horas > 12 && horas < 18){
         img.src = './img/fototarde.jpg'
@@ -18,7 +23,8 @@ function carregar(){
     }
     else{
          img.src = './img/fotonoite.jpg'
-         document.body.style.background = '#02030C'
+         document.body.style.background = '#040618'
+         msg.innerHTML = `Agora são ${horas} horas da noite.`
     }    
 
 
